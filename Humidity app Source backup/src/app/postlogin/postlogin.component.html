@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="onClick()">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+    <div>
+      <mat-sidenav class="sidenav" #sidenav>
+        <mat-list role="list" >
+            <mat-list-item routerLinkActive="active" routerLink="dashboard" role="listitem">Dashboard</mat-list-item>
+            <mat-list-item routerLinkActive="active" routerLink="settings" role="listitem">Settings</mat-list-item>
+            <mat-list-item routerLinkActive="active" routerLink="report" role="listitem">Report</mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    </div>
+  </mat-toolbar>

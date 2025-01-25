@@ -1,0 +1,122 @@
+<div class="container">
+
+  <h2>User Login </h2>
+
+  <div class="form-container">
+    <form >
+      <div class="Login-form">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>User Name </mat-label>
+            <input matInput formControlName="userName">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Password </mat-label>
+            <input matInput formControlName="password">
+          </mat-form-field>
+        </p>
+        <div class="btn">
+          <button class="login-btn" mat-raised-button type="submit">Login</button>
+        </div>
+        <span>
+          <!-- <a class="ancher" href="../Login/Forgot/forgot.component.html">Forgot Password</a> -->
+          <a [routerLink]="['/forgot']" >Forgot Password</a>
+        </span>
+        <span>
+          <!-- <a class="ancher" href="../Login/Signup/signup.component.html">Signup</a> -->
+          <!-- <a [routerLink]="[/login/signup]" (click)="onSignup()">Your Link</a> -->
+          <a [routerLink]="['/signup']" >Signup</a>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="login-page" gdRows="10% 80% 10%" gdRows.lt-md="0% 100% 0%" background-color="yellow">
+  <div></div>
+  <div gdColumns="10% 80% 10%" gdColumns.lt-md="0% 100% 0%">
+    <div></div>
+    <mat-card class="login-card" gdRows="100%">
+      <div gdColumns="50% 50%" gdColumns.lt-md="mobile" gdRows="54px 32px">
+        <div class="primary-title">Welcome to ACC</div>
+        <div class="secondary-title" gdColumns="36px auto" gdAlignColumns="center center">
+          <mat-icon>home</mat-icon>
+          HUMIDITY APP
+        </div>
+      </div>
+      <div gdRows="auto auto" gdGap="16px" style="width:100%;">
+        <div gdRows="auto auto" gdGap="10px">
+          <div fxLayout fxLayoutAlign="center center">
+            <div class="login-lock">
+              <mat-icon>lock</mat-icon>
+            </div>
+          </div>
+          <div class="login-title">Login</div>
+        </div>
+        <form gdRows="auto auto auto" >
+          <mat-form-field appearance="outline">
+            <mat-label>User Name</mat-label>
+            <input type="text" formControlName="username" matInput autocomplete="off">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" formControlName="password" matInput autocomplete="current-password">
+          </mat-form-field>
+          <div>
+            <button type="submit" color="primary" mat-raised-button >
+              <mat-spinner class="login-loader" diameter="24" strokeWidth="3"></mat-spinner>
+              login
+            </button>
+          </div>
+        </form>
+      </div>
+  </mat-card>
+</div>
+</div>
+
+
+[formGroup]="loginform" (ngSubmit)="login()" -->
